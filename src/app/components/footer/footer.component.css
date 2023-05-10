@@ -1,0 +1,99 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #222438;
+  padding: 10px 10px;
+  margin: 10px 100px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+.icon {
+  display: flex;
+  flex: 1;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+.fa-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: red;
+}
+
+.fa-google:hover {
+  background-color: rgb(80, 80, 79);
+}
+
+.fa-github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: rgb(19, 18, 18);
+}
+
+.fa-github:hover {
+  background-color: rgb(80, 80, 79);
+}
+
+.fa-linkedin {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.fa-linkedin:hover {
+  background-color: rgb(80, 80, 79);
+}

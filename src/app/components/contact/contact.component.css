@@ -1,0 +1,63 @@
+#CONTACT {
+  padding: 50px, 50px;
+  margin-top: 200px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  color: white;
+  font-size: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #222438;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(145, 142, 16, 0.1);
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #ccc;
+}
+
+.example-button-row button {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 69, 0, 1),
+    rgba(255, 0, 0, 1)
+  );
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 150px;
+}

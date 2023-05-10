@@ -1,0 +1,100 @@
+.headerComponent {
+  display: flex;
+  flex-direction: row;
+  background-color: #222438;
+  padding: 50px 50px;
+  margin: 10px 100px;
+  border-radius: 5px;
+}
+
+.header {
+  flex: 1;
+}
+
+h1 {
+  color: aliceblue;
+  font-size: 30px;
+  font-family: monospace;
+  font-weight: 700;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 26ch;
+  animation: typing 2s steps(26), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h2 {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 69, 0, 1),
+    rgba(255, 0, 0, 1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit (Safari, Chrome, etc.) */
+  color: transparent;
+  font-size: 40px;
+  font-family: "Roboto Mono", monospace;
+  padding: 10px 0;
+}
+
+.example-button-row button {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 69, 0, 1),
+    rgba(255, 0, 0, 1)
+  );
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Ajusta la altura del contenedor */
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  right: 50; /* Alinea inicialmente el contenedor a la derecha */
+  transform: translate(50%, -50%);
+  width: 300px; /* Ajusta el tamaño del contenedor circular */
+  height: 300px;
+  border-radius: 50%; /* Hace que el contenedor sea circular */
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 69, 0, 1),
+    rgba(255, 0, 0, 1)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.5s ease; /* Agrega una transición suave */
+}
+
+.circle img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen dentro del círculo */
+  max-height: 100%;
+  object-fit: contain; /* Ajusta cómo la imagen se ajusta dentro del contenedor */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  clip-path: circle(50%); /* Aplica una máscara circular a la imagen */
+}

@@ -1,0 +1,37 @@
+nav {
+  padding: 5px 20px;
+  margin: 10px 100px;
+  text-align: right;
+  background-color: #222438;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+nav li a:hover {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 69, 0, 1),
+    rgba(255, 0, 0, 1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit (Safari, Chrome, etc.) */
+  color: transparent;
+}

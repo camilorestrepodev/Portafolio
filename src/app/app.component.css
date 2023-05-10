@@ -1,0 +1,62 @@
+.about {
+  padding: 10px 50px;
+  margin: 20px 100px;
+  margin-bottom: 50px;
+}
+
+.portfolio {
+  margin-bottom: 50px;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  color: white;
+  font-size: 30px;
+}
+
+.parrafo {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+  text-align: center;
+}
+
+.section {
+  text-align: center;
+  height: 400px;
+  padding: 50px 50px;
+  margin: 10px 100px;
+  background-color: #222438;
+  border-radius: 5px;
+}
+
+h3 {
+  color: white;
+  font-weight: 900;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+}
+
+h4 {
+  margin-top: 30px;
+  color: white;
+  font-weight: 900;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  padding-left: 20px;
+}
+
+.footer {
+  margin-top: 50px;
+}
