@@ -11,6 +11,7 @@ mat-grid-list {
   width: 800px;
   gap: 5px;
   padding: 40px 40px;
+  height: 100vh;
 }
 
 mat-grid-tile {

@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ContactComponent } from './components/contact/contact.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { ContactComponent } from './components/contact/contact.component';
     MatSlideToggleModule,
     MatButtonModule,
     MatGridListModule,
-    [AppRoutingModule],
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

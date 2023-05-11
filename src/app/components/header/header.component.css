@@ -1,19 +1,22 @@
 .headerComponent {
   display: flex;
   flex-direction: row;
-  background-color: #222438;
-  padding: 50px 50px;
-  margin: 10px 100px;
+  padding: 50px 80px;
+  margin: 30px 100px;
+  background: linear-gradient(to right, #222438 20%, #691901 200%);
+
   border-radius: 5px;
+  height: 83vh;
 }
 
 .header {
   flex: 1;
+  margin-top: 230px;
 }
 
-h1 {
-  color: aliceblue;
-  font-size: 30px;
+span {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
   font-family: monospace;
   font-weight: 700;
   display: block;
@@ -46,9 +49,32 @@ h2 {
   background-clip: text;
   -webkit-background-clip: text; /* Para navegadores basados en WebKit (Safari, Chrome, etc.) */
   color: transparent;
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Roboto Mono", monospace;
   padding: 10px 0;
+  font-weight: 900;
+}
+
+.example-button-row a {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 69, 0, 1);
+  border-radius: 5px;
+  padding: 20px 20px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.example-button-row a:hover {
+  background-image: linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(252, 252, 252)
+  );
+  color: #222438;
 }
 
 .example-button-row button {
@@ -58,27 +84,35 @@ h2 {
     rgba(255, 0, 0, 1)
   );
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border: none;
   outline: none;
   cursor: pointer;
   margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.example-button-row button:hover {
+  border: 2px solid rgb(255, 254, 254);
+  background-image: none;
+  background-color: transparent;
 }
 
 .container {
   position: relative;
   width: 100%;
-  height: 300px; /* Ajusta la altura del contenedor */
+  height: 800px; /* Ajusta la altura del contenedor */
   overflow: hidden;
 }
 
 .circle {
   position: absolute;
-  top: 50%;
+  top: 350px;
   right: 50; /* Alinea inicialmente el contenedor a la derecha */
   transform: translate(50%, -50%);
-  width: 300px; /* Ajusta el tamaño del contenedor circular */
-  height: 300px;
+  width: 400px; /* Ajusta el tamaño del contenedor circular */
+  height: 400px;
   border-radius: 50%; /* Hace que el contenedor sea circular */
   background-image: linear-gradient(
     45deg,
@@ -97,4 +131,92 @@ h2 {
   object-fit: contain; /* Ajusta cómo la imagen se ajusta dentro del contenedor */
   border-radius: 50%; /* Hace que la imagen sea circular */
   clip-path: circle(50%); /* Aplica una máscara circular a la imagen */
+}
+
+.iconos {
+  top: 680px;
+  left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.fa-google {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 69, 0, 1),
+    rgba(255, 0, 0, 1)
+  );
+  transition: transform 0.3s ease;
+}
+
+.fa-google:hover {
+  transform: scale(1.2);
+}
+
+.fa-github {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 20px;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 69, 0, 1),
+    rgba(255, 0, 0, 1)
+  );
+  transition: transform 0.3s ease;
+}
+
+.fa-github:hover {
+  transform: scale(1.2);
+}
+
+.fa-linkedin {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 69, 0, 1),
+    rgba(255, 0, 0, 1)
+  );
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.fa-linkedin:hover {
+  transform: scale(1.2);
+}
+
+.frase {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.focus-in-expand {
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }

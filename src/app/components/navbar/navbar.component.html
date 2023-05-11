@@ -1,11 +1,47 @@
-<div id="HOME">
-  <nav>
-    <ul>
-      <li><a href="#HOME">HOME</a></li>
-      <li><a href="#ABOUT">ABOUT</a></li>
-      <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
-      <li><a href="#">SERVICES</a></li>
-      <li><a href="#CONTACT">CONTACT</a></li>
-    </ul>
-  </nav>
+<a class="toggle-btn" (click)="toggleMenu()">
+  <i class="fa-solid fa-bars"></i>
+</a>
+
+<div class="overlay" [ngClass]="{ 'show-overlay': isMenuOpen }"></div>
+
+<div class="sidenav" [ngClass]="{ 'show-menu': isMenuOpen }">
+  <button class="close-btn" (click)="closeMenu()">
+    <span class="close-icon">&times;</span>
+  </button>
+  <ul class="menu">
+    <li><a class="home" href="#" id="first-menu-item">Home</a></li>
+    <li>
+      <a
+        class="about"
+        (click)="scrollTo('about')"
+        (click)="closeMenuOnLinkClick()"
+        >About</a
+      >
+    </li>
+    <li>
+      <a
+        class="resume"
+        (click)="scrollTo('resume')"
+        (click)="closeMenuOnLinkClick()"
+        >Resume</a
+      >
+    </li>
+    <li>
+      <a
+        class="projects"
+        (click)="scrollTo('portfolio')"
+        (click)="closeMenuOnLinkClick()"
+        >Projects</a
+      >
+    </li>
+    <li>
+      <a
+        class="contact"
+        (click)="scrollTo('contact')"
+        (click)="closeMenuOnLinkClick()"
+        >Contact</a
+      >
+    </li>
+  </ul>
+  <a></a>
 </div>
